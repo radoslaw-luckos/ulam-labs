@@ -1,6 +1,16 @@
-# Getting Started with Create React App
+# Recruitment task
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+## Project description
+
+This project covers all of requirements. 
+It gives user the possibility to select up to 5 cryptocurrencies. 
+After selecting each coin is displayed on dedicated card (name + current price) and on the chart (prices history from last 24h). 
+Each currency can be removed from selected. 
+All of the actions updates not only state of teh app but also local storage, so selected coins are persistent.
+
+Projects does not include any tests. 
 
 ## Available Scripts
 
@@ -18,6 +28,7 @@ You will also see any lint errors in the console.
 
 Launches the test runner in the interactive watch mode.\
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Project doesn't include any tests. 
 
 ### `npm run build`
 
