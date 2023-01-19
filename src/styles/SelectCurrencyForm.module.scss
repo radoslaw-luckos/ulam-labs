@@ -1,0 +1,73 @@
+@import './variables.scss';
+
+.selectForm {
+    background-color: $bg-second;
+    padding: $medium-p;
+    border-radius: .5rem .5rem 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column nowrap;
+    position: relative;
+    width: 90%;
+    &::after {
+        content: '';
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        height: 0.25rem;
+        background: $bg-accent;
+    }
+    &Group{
+        margin-bottom: $medium-m;
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        &Label{
+            text-align: center;
+        }
+        &Input{
+            margin-top: $small-m;
+            padding: .5rem $small-p;
+            font-size: 1rem;
+            font-family: $font-family-primary, sans-serif;
+            border: none;
+            border-bottom: 1px solid $font-color-primary;
+            background: none;
+            color: $font-color-primary;
+            width: 60%;
+            margin-inline: auto;
+            text-align: center;
+        }
+        select > option {
+            background-color: $bg-second;
+            color: $font-color-primary;
+        }
+    }
+    
+    &SubmitBtn{
+        padding: .5rem $small-p;
+        font-size: 1.25rem;
+        cursor: pointer;
+        outline: none;
+        background: $font-color-titles;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        border-image: $bg-accent 1 100%;
+       
+    }
+}
+
+@media (min-width: 768px) {
+    .selectForm {
+        flex-flow: row nowrap;
+        max-width: 800px;
+        &Group{
+            margin-bottom: 0;
+        }
+    }
+}

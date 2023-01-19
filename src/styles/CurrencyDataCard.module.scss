@@ -1,0 +1,47 @@
+@import './variables.scss';
+
+.card{
+    padding: $medium-p;
+    width: 90%;
+    max-width: 350px;
+    border-image: $bg-accent 1;
+    border-width: 2px;
+    border-style: solid;
+    background-color: $bg-second;
+    display: flex;
+    align-items: center;
+    flex-flow: column nowrap;
+    &Data{
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: flex-start;
+        justify-content: space-between;
+        width: 100%;
+        h1{
+            font-size: 1rem;
+            margin-right: $small-m;
+        }
+        h2{
+            font-size: 1rem;
+        }
+    }
+    &Price {
+        width: 100%;
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        justify-content: flex-start;
+        margin-top: $small-m;
+    }
+    &RemoveBtn{
+        background-color: transparent;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        svg{
+            height: 2rem;
+            width: auto;
+            fill: #970000;
+        }
+    }
+}

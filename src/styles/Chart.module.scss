@@ -1,0 +1,26 @@
+@import './variables.scss';
+
+.ChartContainer{
+    width: 90%;
+    min-height: 400px;
+    background-color: $bg-second;
+    padding: $medium-p;
+    margin-bottom: $big-m;
+    border-radius: .5rem;
+    max-width: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    canvas {
+        width: 100%;
+    }
+    .error{
+        color:red;
+        text-align: center;
+      }
+}
+@media (max-width: 815px){
+    .ChartContainer{
+        min-height: 200px;
+    }
+}

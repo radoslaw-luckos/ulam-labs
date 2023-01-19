@@ -1,0 +1,19 @@
+@import './variables.scss';
+
+.grid{
+    padding-top: $big-p;
+    width: 90%;
+    display: flex;
+    flex-flow: row wrap;
+    gap: $medium-p;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: $medium-m;
+    max-width: 800px;
+}
+
+@media (max-width: 815px){
+    .grid{
+        justify-content: center;
+    }
+}
