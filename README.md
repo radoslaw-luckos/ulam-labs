@@ -5,10 +5,11 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## Project description
 
 This project covers all of requirements. 
-It gives user the possibility to select up to 5 cryptocurrencies. 
+It gives user the possibility to select up to 5 cryptocurrencies. Because of large amount of data received from API it takes few seconds to render select options.
 After selecting each coin is displayed on dedicated card (name + current price) and on the chart (prices history from last 24h). 
 Each currency can be removed from selected. 
 All of the actions updates not only state of teh app but also local storage, so selected coins are persistent.
+
 
 Projects does not include any tests. 
 
