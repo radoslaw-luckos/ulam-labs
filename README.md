@@ -2,6 +2,8 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+Live website version link: https://crypto-select.netlify.app/
+
 ## Project description
 
 This project covers all of requirements. 
